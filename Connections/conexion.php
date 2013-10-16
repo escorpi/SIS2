@@ -11,7 +11,7 @@ function Conectarse()
       echo "Error conectando a la base de datos.";
       exit();
    }
-   if (!mysql_select_db("sis2_db",$link))
+   if (!mysql_select_db("laboratorio_db",$link))
    { 
       echo "Error seleccionando la base de datos."; 
       exit(); 
