@@ -6,12 +6,12 @@
 <?php 
 function Conectarse() 
 { 
-   if (!($link=mysql_connect("localhost","root","")))
+   if (!($link=mysql_connect("localhost","root","escorpi4ever")))
    {
       echo "Error conectando a la base de datos.";
       exit();
    }
-   if (!mysql_select_db("laboratorio_db",$link))
+   if (!mysql_select_db("laboratorio",$link))
    { 
       echo "Error seleccionando la base de datos."; 
       exit(); 
