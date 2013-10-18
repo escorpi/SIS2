@@ -15,15 +15,16 @@ class RegistrarUsuario {
 		$carrera=$_POST['carrera'];
 		/*$fecha=$_POST['cmbo_calendario'];*/
 		$correo="escorpi_4ever";
-        
+        $codigo_usu=0;
         $query2="SELECT MAX(COD_USUARIO) AS id FROM usuario";
         $rs = mysql_query($query2,Conexion::con());
         if ($row = mysql_fetch_row($rs)) {
         $id = trim($row[0]);
+        $codigo_usu=$id+1;
         }  
-        echo "$id";
+        echo "$id"+"------"+"$codigo_usu";
        // aqui ya hacemos la insercion del usuario
-        $sql = "insert into usuario (cod_usuario,cod_labo,nombre_usuario, apell_paterno_uasuario, apell_materno_usuario, ci,  email, carrera) values ($id,101,'$nombre','$apPaterno', '$apMaterno', $cedulaIdentidad, '$correo',  '$carrera')";
+        $sql = "insert into usuario (cod_usuario,cod_labo,nombre_usuario, apell_paterno_uasuario, apell_materno_usuario, ci,  email, carrera) values ($codigo_usu,101,'$nombre','$apPaterno', '$apMaterno', $cedulaIdentidad, '$correo',  '$carrera')";
         $res=  mysql_query($sql, Conexion::con());      // fin
         /**
         // aqui redireccionamos a lista usuario.php
