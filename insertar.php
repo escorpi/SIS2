@@ -26,12 +26,12 @@ class RegistrarUsuario {
        // aqui ya hacemos la insercion del usuario
         $sql = "insert into usuario (cod_usuario,cod_labo,nombre_usuario, apell_paterno_uasuario, apell_materno_usuario, ci,  email, carrera) values ($codigo_usu,101,'$nombre','$apPaterno', '$apMaterno', $cedulaIdentidad, '$correo',  '$carrera')";
         $res=  mysql_query($sql, Conexion::con());      // fin
-        /**
+        
         // aqui redireccionamos a lista usuario.php
         echo '<script type="text/javascript">'
-        .'window.location = "ListaUsuarios.php";'
+        .'window.location = "listarUsuarios.php";'
         .'</script>';
-        */
+       
     }
 }
 

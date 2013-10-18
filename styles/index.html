@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Maquillando los radioBox y los checkBox</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+<fieldset>
+	<legend>CheckBox con estilo</legend>
+	<ul>
+		<li>
+			<input type="checkbox" name="check" id="check_01" value="1" checked="checked" class="check_01" /><label for="check_01">&#160;</label>
+		</li>
+	
+		<li class="check_02">
+			<label for="check_01_02" class="check_02">Opción del elemento 1</label>
+			<input type="checkbox" name="check_01_02" id="check_01_02" value="1" checked="checked" class="check_02" />
+			<label for="check_01_02">Opción</label><br />
+			
+			<label for="check_02_02" class="check_02">Opción del elemento 2</label>
+			<input type="checkbox" name="check_02_02" id="check_02_02" value="1" class="check_02" />
+			<label for="check_02_02">Opción</label>
+		</li>
+	
+		<li>
+			<input type="checkbox" name="check" id="check_03" value="1" class="check_03" /><label for="check_03">&#160;</label>
+		</li>		
+		
+	</ul>
+</fieldset>
+
+<fieldset>
+	<legend>RadioBox con estilo</legend>
+		<ul>
+			<li class="radio_01">	
+				<input type="radio" name="radio_01" id="radio_01_01" value="1" class="primero" checked="checked" /><label for="radio_01_01">&#160;</label>
+				<input type="radio" name="radio_01" id="radio_02_01" value="2" class="ultimo" /><label for="radio_02_01">&#160;</label>
+			</li>
+			
+			<li class="radio_02">	
+				<label for="radio_01_02">Opción 1</label>
+				<input type="radio" name="radio_02" id="radio_01_02" value="1" class="primero" />
+				<label for="radio_01_02">&#160;</label>
+				
+				<label for="radio_02_02">Opción 2</label>
+				<input type="radio" name="radio_02" id="radio_02_02" value="2" class="ultimo" checked="checked" />
+				<label for="radio_02_02">&#160;</label>
+			</li>
+			
+			<li class="radio_03">	
+				<input type="radio" name="radio_03" id="radio_01_03" value="1" class="check_01" checked="checked" /><label for="radio_01_03">&#160;</label>
+				<input type="radio" name="radio_03" id="radio_02_03" value="2" class="check_02" /><label for="radio_02_03">&#160;</label>
+				<input type="radio" name="radio_03" id="radio_03_03" value="3" class="check_03" /><label for="radio_03_03">&#160;</label>
+				<input type="radio" name="radio_03" id="radio_04_03" value="4" class="check_04" /><label for="radio_04_03">&#160;</label>
+				<input type="radio" name="radio_03" id="radio_05_03" value="5" class="check_05" /><label for="radio_05_03">&#160;</label>
+			</li>
+		</ul>
+</fieldset>
+</body>
+</html>
