@@ -8,6 +8,8 @@ require_once('Connections/proyectoDB.php');
 class RegistrarUsuario {
     static function registra(){
 
+		
+
         $nombre=$_POST['nom_estudiante'];
        	$apPaterno=$_POST['ap_paterno'];
 		$apMaterno=$_POST['ap_materno'];
