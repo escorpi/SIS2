@@ -1,0 +1,25 @@
+
+.estilo_caja{
+	background: #999;
+	height: 300px;
+	width: 400px;
+	box-shadow: 3px 3px 3px #000;
+	margin: 30px;
+	padding: 1px;
+	border-radius: 3px;
+	border-left: 3px soild #000;
+	border-top: 3px soild #000;
+}
+.s{
+	color: #900;
+	text-shadow:1px 1px 1px #000000;
+	font-family: Lucida Console;
+}
+.estilo_caja{
+	color:#F00;
+	text-shadow: 1px 1px 1px #000000;
+	font-family: "Comic Sans MS", cursive;
+	font-weight:bold;
+	font-size:14px;
+	margin: 20px;
+}
