@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Laboratotio Info-Sist</title>
+<title>Laboratotio Info-Sistemas</title>
 <link href="css/oop-estilos.css" rel="stylesheet" media="all" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet" type="text/css">
 </head>
