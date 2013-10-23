@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
+<title>Laboratotio Info-Sist</title>
 <link href="css/oop-estilos.css" rel="stylesheet" media="all" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet" type="text/css">
 </head>
@@ -20,7 +20,9 @@ class Cabecera     // Camel Case: Escribir la primera letra de la clase en mayus
 	}
 	
 	public function graficar() //Metodo
-	{
+	{    
+	 echo ' <p id="img_php"><img src="img/php_img_web_oop.jpg" width="300" height="40"></p>		
+            <p id="text_der_img_php">    '
 		//echo"<h1>".$this->texto."</h1>";
 		?>
 		<h1><?php echo $this->texto;?></h1>
