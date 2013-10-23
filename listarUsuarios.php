@@ -37,7 +37,7 @@ $res=mysql_query($sql,$enlace)or die("error en el SQyreyL");
   <?php
   $dbhost = "localhost";
 $dbuser = "root";
-$dbpass = "escorpi4ever";
+$dbpass = "";
 
 $db=mysql_connect($dbhost,$dbuser,$dbpass);
 mysql_select_db('laboratorio');
