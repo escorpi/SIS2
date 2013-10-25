@@ -17,9 +17,9 @@ $res=mysql_query($sql,$enlace)or die("error en el SQyreyL");
 
 <!--<div style="position:absolute; overflow:hidden; left:18px; top:213px; width:210px; height:307px; z-index:2"><img width=210 height=307  border=0 src="imgS1ODV.gif"></DIV>!-->
 <form name="administrador" method="post" >
-  <div align="center"><img src="images/fondo.JPG" width="800" height="200"> 
+  <div align="center"><img src="../images/fondo.JPG" width="800" height="200"> 
    <tr>VOLVER 
-    <td><a href="formularioRegistroDatos.php"><img src="images/atras.PNG" width="25" height="24" border="0"></a></td> </tr>
+    <td><a href="formularioRegistroDatos.php"><img src="../images/atras.PNG" width="25" height="24" border="0"></a></td> </tr>
   </div>
  
 </form>
@@ -65,10 +65,10 @@ echo '<table cellpadding="0" cellspacing="0" width="100%">';
 		//echo '<td><a href="VerSufijos.php" target="popup"  onclick="window.open("","popup","width=500, height=350")"><img src="imagenes/inicio.PNG" width="24" height="24" border="0"></a></td></tr>';
 		
 	?> 
-		<td width="20%"><a href="modificarUsusario.php?cod=+<?php  echo $fila['cod_usuario'];?>" target="popup"  onclick="window.open('','popup','width=500, height=350')"><img src="images/cambiar.PNG" width="24" height="24" border="0"></a></td>
+		<td width="20%"><a href="modificarUsusario.php?cod=+<?php  echo $fila['cod_usuario'];?>" target="popup"  onclick="window.open('','popup','width=500, height=350')"><img src="../images/cambiar.PNG" width="24" height="24" border="0"></a></td>
 <?php
 ?> 
-		<td width="20%"><a href="eliminarUsuario.php?cod=+<?php  echo $fila['cod_usuario'];?>" target="popup"  onclick="window.open('','popup','width=500, height=350')"><img src="images/eliminar.GIF" width="24" height="24" border="0"></a></td></tr>
+		<td width="20%"><a href="eliminarUsuario.php?cod=+<?php  echo $fila['cod_usuario'];?>" target="popup"  onclick="window.open('','popup','width=500, height=350')"><img src="../images/eliminar.GIF" width="24" height="24" border="0"></a></td></tr>
 <?php
 	}
 	echo "</table>";

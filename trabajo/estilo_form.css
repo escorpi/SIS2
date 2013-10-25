@@ -1,0 +1,15 @@
+/* CSS Document */
+input{
+	background-repeat: repeat-x;
+	border: 1px solid #CCC;
+	background-image: url(fondocampotexto.jpg);
+	border-radius: 3px 3px 3px;
+}
+textarea{
+	background-image: url(fondoareatexto.jpg);
+	background-repeat: repeat-x;
+	border: 1px solid #CCC;	
+	border-radius: 3px 3px 3px;
+}
+
+

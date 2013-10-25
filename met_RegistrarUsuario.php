@@ -10,7 +10,7 @@
  *
  * @author Darko
  */
-require_once('../../Connections/proyectoDB.php');
+require_once('Connections/proyectoDB.php');
 class RegistrarUsuario {
     static function registra(){
         $nombre = $_POST["nombre"];//kkkkkkkkkkkkkkkkkkkk
@@ -28,18 +28,7 @@ class RegistrarUsuario {
         
         
         
-        
-      // primero hacemos una consulta para saber el codigo de area a traves del nombre del area  
-        
-        $consulta="select cod_area "
-        ."from area "
-         ."where nombre_area = ".'"'.$area.'"';
-        $cod_area='';
-        $res2=mysql_query($consulta,  Conexion::con());
-            while ($reg=mysql_fetch_assoc($res2))
-            {
-        	$cod_area=$reg["cod_area"];
-            }
+     
        // aqui ya hacemos la insercion del usuario hdhdhdhdhhdhd
         $sql = "insert into usuario (nombre_usuario, app_usuario, apm_usuario, ci_usuario, telefono_usuario, email,fecha_nacimiento, sexo_usuario, password, cargo, cod_area) values ('$nombre','$app', '$apm', $ci,$telefono, '$correo', $edad,'$sexo', '$password', '$cargo', $cod_area)";
         $res=  mysql_query($sql, Conexion::con());

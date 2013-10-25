@@ -11,7 +11,7 @@ require_once('Connections/proyectoDB.php');
 include("manejomysql.php");
 conectar_bd();
 */
-require_once('Connections/proyectoDB.php');
+require_once('../Connections/proyectoDB.php');
 $codigo=$_GET['cod'];
 echo"[[[[[".$codigo."]]]]]]]]";
 
@@ -42,7 +42,7 @@ javascript:window.opener.document.location.reload();self.close();</script>";
 <center>
 <div class="estilo_caja">
  <p class="estilo_titulo">INGRESE LOS DATOS</p>
-<form id="form1" name="form1" method="post" action="update.php">
+<form id="form1" name="form1" method="post" action="updateUsuario.php">
 	<table>
     <tr>
     	<td><p class="s">Nombres</p></td>
@@ -70,7 +70,7 @@ javascript:window.opener.document.location.reload();self.close();</script>";
   	</tr>
     <tr>
     	<td></td>
-        <td><input type="submit" name="insertar" id="boton" value="Inscribir" /></td>
+        <td><input type="submit" name="insertar" id="boton" value="Modificar" /></td>
     </tr>
     </table>
 </form>
