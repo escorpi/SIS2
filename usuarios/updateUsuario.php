@@ -9,17 +9,20 @@ class RegistrarUsuario {
     static function registra(){
 
  $codigoU=$_POST['id'];		
-echo "$codigoU"."--------------";
+//echo "$codigoU"."--------------";
 
-        $nombre=$_POST['nom_estudiante'];
-       	$apPaterno=$_POST['ap_paterno'];
-		$apMaterno=$_POST['ap_materno'];
-		$cedulaIdentidad=$_POST['ci'];
-		$carrera=$_POST['carrera'];
+        $nombre=$_POST['nomb'];
+       	$apPaterno=$_POST['ap'];
+		$ci=$_POST['ci'];
+		$tele=$_POST['tele'];
+		$mail=$_POST['correo'];
+        $pas1=$_POST['pas1'];
+        $uni=$_POST['uni'];
+        $tipo_usu=$_POST['tipo_usu'];
 		/*$fecha=$_POST['cmbo_calendario'];*/
 		
        // aqui ya hacemos la insercion del usuario
-        $sql="UPDATE usuario SET nombre_usuario='$nombre', apell_paterno_uasuario='$apPaterno', apell_materno_usuario='$apMaterno', ci=$cedulaIdentidad, carrera='$carrera'
+        $sql="UPDATE usuario SET nombre='$nombre', apellidos='$apPaterno', ci='$ci', telefono=$tele, correo_electronico='$mail',password='$pas1',universidad='$uni',tipo_usuario='$tipo_usu'
                 WHERE cod_usuario=$codigoU";
         
         $res=  mysql_query($sql, Conexion::con());      // fin

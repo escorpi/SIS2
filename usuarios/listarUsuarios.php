@@ -29,7 +29,7 @@ $res=mysql_query($sql,$enlace)or die("error en el SQyreyL");
 
 <div id="content">
 
-<h1>Cambiar precios de Productos</h1>
+<h1>Modificar Usuarios</h1>
 <div id="pdf" style="width: 870px; height: 380; overflow-y: auto;">
  
  
@@ -41,7 +41,7 @@ $dbpass = "";
 
 $db=mysql_connect($dbhost,$dbuser,$dbpass);
 mysql_select_db('laboratorio');
-  $sql="select CONCAT( nombre_usuario,' ', apell_paterno_uasuario,' ',apell_materno_usuario)as nombreCompleto, ci,cod_usuario from usuario";
+  $sql="select CONCAT( nombre,' ', apellidos)as nombreCompleto, ci,cod_usuario from usuario";
 //$res=mysql_query($sql,$enlace)or die("error en el SQyreyL");
  //$strConsulta = "SELECT cod_usuario,  nombre_usuario, app_usuario, apm_usuario from usuario";
 	$pacientes = mysql_query($sql);

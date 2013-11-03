@@ -22,7 +22,7 @@ echo "$codigoU"."--------------";
         $teclado=$_POST['ci'];
         $mouse=$_POST['carrera'];
         $monitor=$_POST['ci'];
-        $otros=$_POST['carrera'];
+        $otros =$_POST['carrera'];
 		/*$fecha=$_POST['cmbo_calendario'];*/
 		
        // aqui ya hacemos la insercion del usuario
